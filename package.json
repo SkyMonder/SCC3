@@ -2,8 +2,10 @@
   "name": "skycall",
   "version": "1.0.0",
   "scripts": {
-    "install": "cd frontend && npm install",
-    "build": "cd frontend && npm run build",
+    "postinstall": "cd frontend && npm install && npm run build",
+    "start": "node backend/server.js"
+}
+
     "start": "node backend/server.js"
   },
   "dependencies": {
